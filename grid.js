@@ -5,7 +5,7 @@ function buttonClickHandler(action) {
   );
   elementsArray.forEach((element) => container.removeChild(element));
 
-  action === 'shuffle' ? shuffleArray(elementsArray) : sortArray(elementsArray);
+  action === 'shuffle' ? shuffleArray(elementsArray) : sortArray(elementsArray, 'className');
   
   elementsArray.forEach((element) => container.appendChild(element));
 }
@@ -20,6 +20,6 @@ function shuffleArray(array) {
   return array;
 }
 
-function sortArray(array) {
-    
+function sortArray(elementsArray, sortProperty) {
+    return elementsArray.sort((a,b) => (a[sortProperty] > b[sortProperty] ? 1 : -1));
 }
