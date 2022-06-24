@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="heading">Shuffle and Sort</div>
-    <div id="suffleAndSort">
+    <div class="suffleAndSort">
         <div class="box">
-            <div class="cards">
-                <div class="card1">1</div>
-                <div class="card2">2</div>
-                <div class="card3">3</div>
-                <div class="card4">4</div>
-                <div class="card5">5</div>
-                <div class="card6">6</div>
-                <div class="card7">7</div>
-                <div class="card8">8</div>
-                <div class="card9">9</div>
+            <div id="container" class="cards">
+                <div class="shuffle card1">1</div>
+                <div class="shuffle card2">2</div>
+                <div class="shuffle card3">3</div>
+                <div class="shuffle card4">4</div>
+                <div class="shuffle card5">5</div>
+                <div class="shuffle card6">6</div>
+                <div class="shuffle card7">7</div>
+                <div class="shuffle card8">8</div>
+                <div class="shuffle card9">9</div>
             </div>
             <div class="button-container">
-                <button onclick="shuffle()">SHUFFLE</button>
-                <button>SORT</button>
+                <button onclick="buttonClickHandler('shuffle')">SHUFFLE</button>
+                <button onclick="buttonClickHandler('sort')">SORT</button>
             </div>
         </div>
         <div class="info-container">

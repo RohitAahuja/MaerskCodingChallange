@@ -11,7 +11,7 @@ body {
     font-size: 20px;
 }
 
-#suffleAndSort {
+.suffleAndSort {
     background-color: #EFEFEF;
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@ button {
         color: #FFFFFF;
     }
 
-    #suffleAndSort {
+    .suffleAndSort {
         border: 0px;
         background-color: #FFFFFF;
     }
