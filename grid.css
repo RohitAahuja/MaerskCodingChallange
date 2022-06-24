@@ -1,0 +1,153 @@
+
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+#suffleAndSort {
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    height: 100vh;
+    border-top: 5px solid #BFBFBF;
+}
+
+
+
+.box {
+    width: 100vw;
+    display: flex;
+}
+
+.cards {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 70px;
+    font-weight: 500;
+    height: 80vh;
+}
+
+.cards div {
+    width: 26.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.card1, .card8 {
+    background-color: #6F98A8;
+}
+
+.card2, .card4 {
+    background-color: #2B8EAD;
+}
+
+.card6, .card7 {
+    background-color: #BFBFBF;
+}
+
+.card3, .card5, .card9 {
+    background-color: #2F454E;
+}
+
+.button-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0 0 0;
+}
+
+button {
+    background-color: #72C3DC;
+    color: #FFFFFF;
+    border: 0px;
+    box-shadow: 1px 4px #2b8ead;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 10px;
+    width: 80%;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        border: 10px solid #000000;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .heading {
+        background-color: #333333;
+        color: #FFFFFF;
+    }
+
+    #suffleAndSort {
+        border: 0px;
+        background-color: #FFFFFF;
+    }
+
+    .box {
+        flex-direction: column-reverse;
+    }
+
+    .button-container {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    button {
+        width: 100px;
+    }
+
+    .cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        font-size: 20px;
+        margin: 10px 30px;
+        height: auto;
+        gap: 2px;
+    }
+
+    .cards div {
+        width: auto;
+        color: #000000;
+        background-color: #EFEFEF;
+        padding: 5px 0;
+    }
+
+    .card1, .card8 {
+        border-left: 5px solid #6F98A8;
+        background-color: inherit;
+    }
+    
+    .card2, .card4 {
+        border-left: 5px solid #2B8EAD;
+        background-color: inherit;
+    }
+    
+    .card6, .card7 {
+        border-left: 5px solid #BFBFBF;
+        background-color: inherit;
+    }
+    
+    .card3, .card5, .card9 {
+        border-left: 5px solid #2F454E;
+        background-color: inherit;
+    }
+}
